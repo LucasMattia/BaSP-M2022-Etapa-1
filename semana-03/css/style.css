@@ -9,13 +9,19 @@ header{
     height: 10%;
 }
 header img{
+    position: fixed;
+    left: 48%;
+    top: 2%;
 }
 header button{
+    position: fixed;
+    right: 2%;
+    top: 3%;
     background-color: #aace98;
     border: none;
-    border-radius: 3px;
-    width: 75px;
-    height: 38px;
+    border-radius: 8%;
+    width: 8%;
+    height: 4%;
     color: #373867;
 }
 aside{
@@ -49,7 +55,7 @@ aside li{
     border-bottom: 3px solid #373867;
     font-family: 'Roboto', sans-serif;
     margin-top: 6%;
-    padding: 2% 0 2% 0;
+    padding: 2% 0 2% 3%;
     width: 90%;
 }
 footer{
