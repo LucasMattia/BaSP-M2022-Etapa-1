@@ -92,21 +92,26 @@ main{
     margin-left: 300px;
     color: #373867;
 }
+#home, #what-is, #w-choose, #about, #get-in-touch{
+    width: 100%;
+}
+#home{
+    border-bottom: 75px solid #49a37b;
+}
 #home h1{
     padding: 20px;
     color: #ffffff
     font-size: 40px;
     font-weight: bold;
 }
-#home, #what-is, #w-choose, #about, #get-in-touch{
-    width: 100%;
-}
 #home img{
     width: 100%;
     height: 1040px;
 }
-#what-is section{
-    display: inline;
+#what-is{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    border-bottom: 75px solid #49a37b;
 }
 #what-is div{
     display: inline-block;
@@ -114,9 +119,10 @@ main{
     height: auto;
 }
 #what-is h2{
-    vertical-align: top;
+    padding: 0 10% 10% 10%;
 }
 #what-is h3{
+    padding: 0 10% 10% 10%;
     text-align: center;
     vertical-align: top;
     color: #373867b3;
@@ -124,22 +130,40 @@ main{
     font-weight: bold;
 }
 #what-is p{
+    padding: 0 15% 10% 15%;
     text-align: center;
     vertical-align: top;
 }
 #what-is img{
     display: inline-block;
+    vertical-align: bottom;
+    margin: 5% 0 5% 10%;
     width: 430px;
     height: auto;
+}
+#w-choose{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    border-bottom: 75px solid #49a37b;
 }
 #w-choose div{
     display: inline-block;
     width: 49.8%;
     height: auto;
 }
+#about{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    border-bottom: 75px solid #49a37b;
+}
 #about p{
     width: 50%;
     height: auto;  
+}
+#get-in-touch{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    border-bottom: 2px solid #49a37b;
 }
 #get-in-touch form{
     display: inline-block;
@@ -152,8 +176,18 @@ main{
     width: 49.8%;
     height: auto;
 }
-#get-in-touch div{
+#lists div{
     display: inline-block;
-    width: 300px;
+    width: 33%;
+    text-align: center;
     height: auto;
+    margin-bottom: 300px;
+}
+#lists ol{
+    display: inline-block;
+    width: 33%;
+    text-align:left;
+    padding-left: 10%;
+    height: auto;
+    margin-bottom: 300px;
 }
