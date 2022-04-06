@@ -146,6 +146,9 @@ main{
     padding-bottom: 100px;
     border-bottom: 75px solid #49a37b;
 }
+#w-choose h2{
+    padding-bottom: 75px;
+}
 #w-choose div{
     display: inline-block;
     width: 49.8%;
@@ -156,9 +159,22 @@ main{
     padding-bottom: 100px;
     border-bottom: 75px solid #49a37b;
 }
-#about p{
-    width: 50%;
+#about h2{
+    padding-bottom: 75px;
+}
+#about-top p{
+    padding: 0 10% 10% 10%;
+    width: 60%;
     height: auto;  
+}
+#about-bottom p{
+    text-align: right;
+    display: inline-block;
+    width: 50%;
+    padding-left: 10%;
+}
+#about-bottom img{
+    padding: 0 0 0 10%;
 }
 #get-in-touch{
     padding-top: 150px;
