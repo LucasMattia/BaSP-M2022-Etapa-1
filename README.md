@@ -16,5 +16,11 @@ In landing page you will find information about the trackgenix system. The infor
 In addition, in the landing page you will find links to the trackgenix's social media, the possibility to leave a message for the trackgenix staff, a sign in button and a log in button.
 
 ```
+### week-02
+We were working on the HTML of the landing page structure.
+
+### week-03
+We were working principaly on the CSS style for the landing page.
+
 
 > Lucas Mattia, member of Trackgenix development team.
