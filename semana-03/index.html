@@ -158,21 +158,21 @@
             </section>
             <section id="get-in-touch">
                 <h2>Contact Us</h2>
-                <form>
+                <form id="form">
                     <div>
-                        <label for="user">Username:</label>
+                        <label class="label" for="user">Username</label>
                         <input type="text" name="user" id="user" placeholder="Click on me to write">
                     </div>
                     <div>
-                        <label for="email">Email:</label>
+                        <label class="label" for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="Click on me to write">
                     </div>
                     <div>
-                        <label for="phone">Phone number (optional):</label>
+                        <label class="label" for="phone">Phone number (optional)</label>
                         <input type="tel" name="phone" id="phone">
                     </div>
                     <div>
-                        <label for="sector">Sector:</label>
+                        <label class="label" for="sector">Sector</label>
                         <select name="Sector" id="sector">
                             <option value="hr">Human Resources</option>
                             <option value="sys">Systems</option>
@@ -180,10 +180,10 @@
                         </select>
                     </div>
                     <div>
-                        <label for="message">leave a message:</label>
+                        <label class="label" for="message">Leave a message</label>
                         <textarea name="message" id="message" placeholder="Click on me to write"></textarea>
                     </div>
-                    <input type="submit" name="submit" value="Submit">
+                    <input type="submit" name="submit" value="Submit" id="submit">
                 </form>
                 <article>
                     <img src="img/logo-7.jpg" alt="house">
@@ -195,9 +195,11 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </address>
                     <img src="img/logo-8.jpg" alt="telephone">
-                    <address>974040000/974040001/974040002</address>
-                    <address>+99 9 999 999-9999</address>
-                    <address>+11 1 111 111-1111</address>
+                    <div id="exeptional">
+                        <address>974040000/974040001/974040002</address>
+                        <address>+99 9 999 999-9999</address>
+                        <address>+11 1 111 111-1111</address>
+                    </div>
                     <img src="img/logo-9.jpg" alt="mail">
                     <address>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
