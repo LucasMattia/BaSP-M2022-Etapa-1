@@ -17,10 +17,13 @@ In addition, in the landing page you will find links to the trackgenix's social 
 
 ```
 ### week-02
-We were working on the HTML of the landing page structure.
+We worked on the landing page HTML structure.
 
 ### week-03
-We were working principaly on the CSS style for the landing page.
+We worked principaly on the CSS style for the landing page.
+
+### week-04
+we worked on the css responsive layout funcionalities.
 
 
 > Lucas Mattia, member of Trackgenix development team.
