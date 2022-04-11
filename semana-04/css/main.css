@@ -1,4 +1,75 @@
 main{
     font-family: 'roboto', sans-serif;
-    
+    color: #373867;
+}
+#home img{
+    width: 100%;
+    border-bottom: 75px solid #49a37b;
+}
+main h1{
+    display: none;
+}
+h2{
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 0 50px 0;
+}
+p{
+    font-size: 20px;
+    font-weight: 400;
+}
+#what-is{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 75px solid #49a37b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#what-is img{
+    max-width: 550px;
+    min-width: 300px;
+    height: auto;
+}
+#what-is h2{
+    text-align: center;.
+    margin: none;
+    max-width: 450px;
+    min-width: 300px;
+    height: auto;
+}
+#what-is h3{
+    text-align: center;
+    color: #373867b3;
+    font-size: 30px;
+    font-weight: bold;
+    max-width: 450px;
+    min-width: 300px;
+    height: auto;
+    padding-bottom: 30px;
+}
+#what-is p{
+    padding-bottom: 20px;
+    max-width: 450px;
+    min-width: 300px;
+    height: auto;
+    text-align: center;
+}
+#w-choose{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 75px solid #49a37b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#about{
+    border-bottom: 75px solid #49a37b;
+}
+#get-in-touch{
+    border-bottom: 2px solid #49a37b;
 }
