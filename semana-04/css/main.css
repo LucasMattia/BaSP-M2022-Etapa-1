@@ -1,10 +1,8 @@
+/* general */
+
 main{
     font-family: 'roboto', sans-serif;
     color: #373867;
-}
-#home img{
-    width: 100%;
-    border-bottom: 75px solid #49a37b;
 }
 main h1{
     display: none;
@@ -20,6 +18,16 @@ p{
     font-size: 20px;
     font-weight: 400;
 }
+
+/*  HOME  */
+
+#home img{
+    width: 100%;
+    border-bottom: 75px solid #49a37b;
+}
+
+/*   WHAT IS TRACKGENIX?  */
+
 #what-is{
     display: flex;
     flex-wrap: wrap;
@@ -51,6 +59,9 @@ p{
     height: auto;
     padding-bottom: 30px;
 }
+
+/*  WHAT CAN I DO & WHY CHOOSE ME?  */
+
 #what-is p{
     padding-bottom: 20px;
     max-width: 450px;
@@ -59,17 +70,41 @@ p{
     text-align: center;
 }
 #w-choose{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
     border-bottom: 75px solid #49a37b;
     padding-top: 50px;
     padding-bottom: 50px;
 }
+#w-choose article{
+    display: flex;
+    margin: 0 30px 0 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: bisque;
+}
+#w-choose .element{
+    background-color: aquamarine;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 300px;
+    max-width: 450px;
+}
+#w-choose .element img{
+    float: left;
+    margin: 0 20px 20px 0;
+}
+#w-choose h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/*  ABOUT US  */
+
 #about{
     border-bottom: 75px solid #49a37b;
 }
+
+/*  GET IN TOUCH  */
+
 #get-in-touch{
     border-bottom: 2px solid #49a37b;
 }
