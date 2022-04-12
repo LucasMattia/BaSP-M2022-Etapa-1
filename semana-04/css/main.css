@@ -21,7 +21,7 @@ p{
 
 /*  HOME  */
 
-#home img{
+.home img{
     width: 100%;
     border-bottom: 75px solid #49a37b;
 }
@@ -43,8 +43,7 @@ p{
     height: auto;
 }
 #what-is h2{
-    text-align: center;.
-    margin: none;
+    text-align: center;
     max-width: 450px;
     min-width: 300px;
     height: auto;
@@ -102,9 +101,100 @@ p{
 #about{
     border-bottom: 75px solid #49a37b;
 }
+#about p{
+    margin: 15px;
+    width: 400px;
+}
+#about img{
+    display: flex;
+    margin: 15px 0 15px 0;.
+    width: 320;
+
+}
+#about-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+}
+#about-bottom{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    margin-bottom: 50px;
+}
 
 /*  GET IN TOUCH  */
 
-#get-in-touch{
+.get-in-touch{
     border-bottom: 2px solid #49a37b;
+}
+.get-in-touch .conteiner{
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#form{
+    background-color: aquamarine;
+}
+#form input{
+    width: 295px;
+    height: 40px;   
+    border: 1px solid #373867;
+    border-radius: 4px;
+    padding-left: 5px;
+    font: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #373867;
+    margin-bottom: 20px;
+}
+#form label{
+    display: block;
+    margin-bottom: 10px;
+}
+#sector{
+    width: 304px;
+    height: 40px;   
+    border: 1px solid #373867;
+    border-radius: 4px;
+    padding: 0 5px 0 5px;
+    font: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #373867;
+    margin-bottom: 20px;
+}
+#message{
+    width: 295px;
+    height: 100px;   
+    border: 1px solid #373867;
+    border-radius: 4px;
+    padding-left: 5px;
+    font: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #373867;
+    margin-bottom: 20px;
+}
+#submit{
+    background-color: #aace98;
+}
+.conteiner article{
+    background-color: aquamarine;
+    width: 300px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.conteiner article img{
+    float: left;
+    width: 60px;
+    height: 60px;
 }
