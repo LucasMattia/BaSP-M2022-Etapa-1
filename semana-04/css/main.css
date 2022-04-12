@@ -27,91 +27,72 @@ p{
 }
 
 /*   WHAT IS TRACKGENIX?  */
-
-#what-is{
+.what-is{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    border-bottom: 75px solid #49a37b;
-    padding-top: 50px;
     padding-bottom: 50px;
+    border-bottom: 75px solid #49a37b;
 }
-#what-is img{
-    max-width: 550px;
-    min-width: 300px;
-    height: auto;
-}
-#what-is h2{
-    text-align: center;
-    max-width: 450px;
-    min-width: 300px;
-    height: auto;
-}
-#what-is h3{
+.what-is h3{
     text-align: center;
     color: #373867b3;
     font-size: 30px;
     font-weight: bold;
-    max-width: 450px;
-    min-width: 300px;
     height: auto;
     padding-bottom: 30px;
+}
+.what-is p{
+    text-align: center;
+    padding: 0 5px 20px 5px;
+}
+.what-is img{
+    width: 90%;
+    height: auto;
 }
 
 /*  WHAT CAN I DO & WHY CHOOSE ME?  */
 
-#what-is p{
-    padding-bottom: 20px;
-    max-width: 450px;
-    min-width: 300px;
-    height: auto;
-    text-align: center;
-}
-#w-choose{
+.w-choose{
     border-bottom: 75px solid #49a37b;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-#w-choose article{
+.w-choose article{
     display: flex;
     margin: 0 30px 0 30px;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: bisque;
 }
-#w-choose .element{
+.w-choose .element{
     background-color: aquamarine;
     margin-top: 20px;
     margin-bottom: 20px;
     min-width: 300px;
     max-width: 450px;
 }
-#w-choose .element img{
+.w-choose .element img{
     float: left;
     margin: 0 20px 20px 0;
 }
-#w-choose h3{
+.w-choose h3{
     font-size: 22px;
     font-weight: 700;
 }
 
 /*  ABOUT US  */
 
-#about{
+.about{
     border-bottom: 75px solid #49a37b;
 }
-#about p{
+.about p{
     margin: 15px;
-    width: 400px;
 }
-#about img{
-    display: flex;
-    margin: 15px 0 15px 0;.
-    width: 320;
-
+.about img{
+    width: 90%;
 }
-#about-top{
+.about-top{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -119,7 +100,7 @@ p{
     background-color: antiquewhite;
     margin-bottom: 20px;
 }
-#about-bottom{
+.about-bottom{
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
@@ -139,10 +120,10 @@ p{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-#form{
+.form{
     background-color: aquamarine;
 }
-#form input{
+.form input{
     width: 295px;
     height: 40px;   
     border: 1px solid #373867;
@@ -154,7 +135,7 @@ p{
     color: #373867;
     margin-bottom: 20px;
 }
-#form label{
+.form label{
     display: block;
     margin-bottom: 10px;
 }
@@ -197,4 +178,36 @@ p{
     float: left;
     width: 60px;
     height: 60px;
+}
+.get-in-touch article{
+    margin: 5px;
+}
+.get-in-touch span{
+    display: inline-block;
+}
+.get-in-touch article img{
+    margin: 5px;
+}
+.conteiner article{
+    width: 90%;
+    max-width: 425px;
+    margin-bottom: 50px;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.lists li{
+    text-align:left;
+}
+.lists div{
+    margin-top: 20px;
+    text-align: center;
+}
+.lists h3{
+    font-size: 19px;
+    font-weight: bold;
 }
