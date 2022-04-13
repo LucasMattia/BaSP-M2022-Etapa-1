@@ -4,6 +4,16 @@ main{
     font-family: 'roboto', sans-serif;
     color: #373867;
 }
+@media only screen and (min-width: 480px) {
+    body {
+      background-color: lightblue;
+    }
+}
+@media only screen and (min-width: 768x) {
+    body {
+      background-color: coral;
+    }
+}
 main h1{
     display: none;
 }
@@ -50,7 +60,16 @@ p{
     width: 90%;
     height: auto;
 }
-
+@media only screen and (min-width: 480px) {
+    .what-is{
+      display: flex;
+      flex-direction: row;
+      margin: 10px;
+    }
+    .what-is img{
+        width: 35%;
+    }
+}
 /*  WHAT CAN I DO & WHY CHOOSE ME?  */
 
 .w-choose{
@@ -67,18 +86,24 @@ p{
 }
 .w-choose .element{
     background-color: aquamarine;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    min-width: 300px;
+    margin: 20px 5px 0 5px;
+    min-width: 200px;
     max-width: 450px;
 }
 .w-choose .element img{
     float: left;
+    width: 15%;
     margin: 0 20px 20px 0;
 }
 .w-choose h3{
     font-size: 22px;
     font-weight: 700;
+}
+@media only screen and (min-width: 480px) {
+    .w-choose article{
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }
 
 /*  ABOUT US  */
