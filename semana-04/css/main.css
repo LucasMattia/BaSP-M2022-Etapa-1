@@ -6,12 +6,19 @@ main{
 }
 @media only screen and (min-width: 480px) {
     body {
-      background-color: lightblue;
+        background-color: lightblue;
     }
 }
-@media only screen and (min-width: 768x) {
-    body {
-      background-color: coral;
+@media only screen and (min-width: 768px) {
+    main {
+        margin-left: 30%;
+        background-color: coral;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    main {
+        margin-left: 300px;
+        background-color: coral;
     }
 }
 main h1{
