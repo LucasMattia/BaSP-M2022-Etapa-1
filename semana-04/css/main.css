@@ -133,11 +133,29 @@ p{
     background-color: antiquewhite;
     margin-bottom: 50px;
 }
+@media only screen and (min-width: 480px) {
+    .about img{
+        width: 35%;
+        max-width: 450px;        
+    }
+    .about p{
+        width: 65%;
+        max-width: 560px;
+    }
+    .about-bottom{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .about-top{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
 
 /*  GET IN TOUCH  */
 
 .get-in-touch{
-    border-bottom: 2px solid #49a37b;
+    border-bottom: 75px solid #49a37b;
 }
 .get-in-touch .conteiner{
     background-color: #f4f4f4;
@@ -145,8 +163,15 @@ p{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+@media only screen and (min-width: 480px) {
+    .get-in-touch .conteiner{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
 .form{
     background-color: aquamarine;
+    margin-bottom: 20px;
 }
 .form input{
     width: 295px;
@@ -218,12 +243,21 @@ p{
     max-width: 425px;
     margin-bottom: 50px;
 }
+.conteiner article div{
+    margin-bottom: 10px;
+}
 .lists{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 200px;
+}
+@media only screen and (min-width: 480px) {
+    .lists{
+        display: flex;
+        flex-direction: row;
+    }
 }
 .lists li{
     text-align:left;
