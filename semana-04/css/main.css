@@ -5,20 +5,16 @@ main{
     color: #373867;
 }
 @media only screen and (min-width: 480px) {
-    body {
-        background-color: lightblue;
-    }
+
 }
 @media only screen and (min-width: 768px) {
     main {
         margin-left: 30%;
-        background-color: coral;
     }
 }
 @media only screen and (min-width: 1000px) {
     main {
         margin-left: 300px;
-        background-color: coral;
     }
 }
 main h1{
@@ -71,10 +67,13 @@ p{
     .what-is{
       display: flex;
       flex-direction: row;
-      margin: 10px;
+      padding: 3% 2% 3% 2%;
     }
     .what-is img{
         width: 35%;
+    }
+    .what-is div{
+        padding: 0 2% 0 2%;
     }
 }
 /*  WHAT CAN I DO & WHY CHOOSE ME?  */
@@ -89,10 +88,8 @@ p{
     margin: 0 30px 0 30px;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: bisque;
 }
 .w-choose .element{
-    background-color: aquamarine;
     margin: 20px 5px 0 5px;
     min-width: 200px;
     max-width: 450px;
@@ -117,6 +114,7 @@ p{
 
 .about{
     border-bottom: 75px solid #49a37b;
+    padding: 0 2% 0 2%;
 }
 .about p{
     margin: 15px;
@@ -129,7 +127,6 @@ p{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: antiquewhite;
     margin-bottom: 20px;
 }
 .about-bottom{
@@ -137,7 +134,6 @@ p{
     flex-wrap: wrap-reverse;
     justify-content: space-around;
     align-items: center;
-    background-color: antiquewhite;
     margin-bottom: 50px;
 }
 @media only screen and (min-width: 480px) {
@@ -163,9 +159,9 @@ p{
 
 .get-in-touch{
     border-bottom: 75px solid #49a37b;
+    padding: 0 2% 0 2%;
 }
 .get-in-touch .conteiner{
-    background-color: #f4f4f4;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -177,7 +173,6 @@ p{
     }
 }
 .form{
-    background-color: aquamarine;
     margin-bottom: 20px;
 }
 .form input{
@@ -224,7 +219,6 @@ p{
     background-color: #aace98;
 }
 .conteiner article{
-    background-color: aquamarine;
     width: 300px;
     width: fit-content;
     display: flex;
