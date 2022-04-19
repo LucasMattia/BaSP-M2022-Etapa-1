@@ -5,14 +5,14 @@ console.log('exercise 01: variables and operators');
 //      en una 3er variable
 
 var a = 4, b = 18, c;
-
 c = a + b;
+console.log('\t1.a: ' + a + ' + ' + b + ' = ' + c);
 
 // 1.b- Crear dos variables de tipo string y concatenarlas guardando el resultado en una 3er variable.
 
 var str1 = 'Rosario', str2 = 'Central', str3;
-
 str3 = str1 + str2;
+console.log('\t1.b: ' + str1+ ' + ' + str2 + ' = ' + str3);
 
 // 1.c- Crear dis variables de tipo String y sumar el largo de cada variable (cantidad de letras del string) guardando
 //      el resultado de la suma en una 3er variable (utilizar length)
@@ -20,5 +20,5 @@ str3 = str1 + str2;
 // hago uso de las variables "str1" y "str2" creadas previamente
 
 var tlength;
-
 tlength = (str1+str2).length;
+console.log('\t1.c: The length of the string "' + str1 + str2 + '" is ' + tlength);

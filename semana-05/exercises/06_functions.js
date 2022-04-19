@@ -10,14 +10,13 @@ function addition (x , y){
     return x + y;
 }
 sum = addition(a, b);
-console.log('\ta = '+ a +'\tb = ' + b + '\tb + a = ' + sum);
+console.log('\t6.a: a = '+ a +'\tb = ' + b + '\tb + a = ' + sum);
 
 //6.b-  A la función suma anterior, agregarle una validación para controlar si alguno de los parámetros no es un
 //      número, mostrar una alerta aclarando que uno de los parámetros tiene error y retornar el valor NaN como
 //      resultado.
 
 var h = 6.7;
-
 function additionB (x , y){
     if(typeof x !== 'number' || typeof y !== 'number'){
         window.alert('Error: parameter type invalid');
@@ -41,9 +40,9 @@ function valInt(x){
         return false;
     }
 }
-console.log('\tnot a number: ' + valInt('asdasd'));
-console.log('\tnot an integer: ' + valInt(6.5));
-console.log('\tan integer: ' + valInt(8));
+console.log('\t6.c: Not a number: ' + valInt('asdasd'));
+console.log('\t6.c: Not an integer: ' + valInt(6.5));
+console.log('\t6.c: An integer: ' + valInt(8));
 
 
 //6.d-  A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. En caso
@@ -63,9 +62,8 @@ function additionD (x , y){
         return x + y;
     }
 }
-
 sum = additionD (a,h);
-console.log('\t' + sum);
+console.log('\t6.d: ' + sum);
 
 //6.e-  Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma probando
 //      que todo siga funcionando igual.
@@ -87,5 +85,4 @@ function valid(x){
         return x;
     }
 }
-
-console.log(additionE(5,5.8));
+console.log('\t6.e: ' + additionE(5,5.8));

@@ -6,7 +6,6 @@ console.log('Exercise 04: If else');
 //      mostrar una alerta con el mensaje “Greater than 0,5” y sino un alerta con el mensaje “Lower than 0,5”.
 
 var numEx04 = Math.random();
-
 if (numEx04 < 0.5){
     window.alert('Lower than 0,5');
 }else if (numEx04 > 0.5){
@@ -23,7 +22,6 @@ if (numEx04 < 0.5){
 //      vii.“Anciano” si es mayor a 75 años.
 
 var age = Math.round(Math.random()*100);
-
 if(age < 2){
     window.alert('Bebe (edad: '+age+' años)');
 }else if(age < 13){

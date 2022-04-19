@@ -50,4 +50,4 @@ for(i = 0; i < 10; i++){
     arr05d[i] = i;
 }
 
-console.log('\t' + arr05d);
+console.log('\t5.d: ' + arr05d);
