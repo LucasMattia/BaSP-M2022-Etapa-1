@@ -3,9 +3,7 @@ main{
     font-family: 'roboto', sans-serif;
     color: #373867;
 }
-main h1{
-    display: none;
-}
+
 h2{
     text-align: center;
     margin: auto;
@@ -18,9 +16,25 @@ p{
     font-weight: 400;
 }
 /*  HOME  */
-.home img{
-    width: 100%;
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
     border-bottom: 75px solid #49a37b;
+    background-image: url("../img/background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.home img{
+    height: 39vh;
 }
 /*   WHAT IS TRACKGENIX?  */
 .what-is{
@@ -194,11 +208,14 @@ p{
 }
 .lists div{
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
 }
 .lists h3{
     font-size: 19px;
     font-weight: bold;
+}
+.lists a{
+    text-decoration: none;
 }
 @media only screen and (min-width: 480px) {
     .what-is{
@@ -212,17 +229,14 @@ p{
     .what-is div{
         padding: 0 2% 0 2%;
     }
-    .lists{
-        display: flex;
-        flex-direction: row;
-    }
-    .get-in-touch .conteiner{
+    .w-choose article{
         display: flex;
         flex-wrap: nowrap;
     }
     .about img{
         width: 35%;
-        max-width: 450px;        
+        max-width: 450px;
+        min-width: 225px;        
     }
     .about p{
         width: 65%;
@@ -236,9 +250,13 @@ p{
         display: flex;
         flex-wrap: nowrap;
     }
-    .w-choose article{
+    .get-in-touch .conteiner{
         display: flex;
         flex-wrap: nowrap;
+    }
+    .lists{
+        display: flex;
+        flex-direction: row;
     }
 }
 @media only screen and (min-width: 768px) {

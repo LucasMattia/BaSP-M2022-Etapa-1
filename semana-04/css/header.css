@@ -20,6 +20,9 @@ header .conteiner{
     height: auto;
     filter: #aace98;
 }
+#icon{
+    margin-left: 55px;
+}
 header button{
     height: 35px;
     width: 100px;
