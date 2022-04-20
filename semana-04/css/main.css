@@ -1,21 +1,7 @@
 /* general */
-
 main{
     font-family: 'roboto', sans-serif;
     color: #373867;
-}
-@media only screen and (min-width: 480px) {
-
-}
-@media only screen and (min-width: 768px) {
-    main {
-        margin-left: 30%;
-    }
-}
-@media only screen and (min-width: 1000px) {
-    main {
-        margin-left: 300px;
-    }
 }
 main h1{
     display: none;
@@ -31,14 +17,11 @@ p{
     font-size: 20px;
     font-weight: 400;
 }
-
 /*  HOME  */
-
 .home img{
     width: 100%;
     border-bottom: 75px solid #49a37b;
 }
-
 /*   WHAT IS TRACKGENIX?  */
 .what-is{
     display: flex;
@@ -63,21 +46,7 @@ p{
     width: 90%;
     height: auto;
 }
-@media only screen and (min-width: 480px) {
-    .what-is{
-      display: flex;
-      flex-direction: row;
-      padding: 3% 2% 3% 2%;
-    }
-    .what-is img{
-        width: 35%;
-    }
-    .what-is div{
-        padding: 0 2% 0 2%;
-    }
-}
 /*  WHAT CAN I DO & WHY CHOOSE ME?  */
-
 .w-choose{
     border-bottom: 75px solid #49a37b;
     padding-top: 50px;
@@ -103,15 +72,7 @@ p{
     font-size: 22px;
     font-weight: 700;
 }
-@media only screen and (min-width: 480px) {
-    .w-choose article{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-}
-
 /*  ABOUT US  */
-
 .about{
     border-bottom: 75px solid #49a37b;
     padding: 0 2% 0 2%;
@@ -136,27 +97,7 @@ p{
     align-items: center;
     margin-bottom: 50px;
 }
-@media only screen and (min-width: 480px) {
-    .about img{
-        width: 35%;
-        max-width: 450px;        
-    }
-    .about p{
-        width: 65%;
-        max-width: 560px;
-    }
-    .about-bottom{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    .about-top{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-}
-
 /*  GET IN TOUCH  */
-
 .get-in-touch{
     border-bottom: 75px solid #49a37b;
     padding: 0 2% 0 2%;
@@ -165,12 +106,6 @@ p{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-@media only screen and (min-width: 480px) {
-    .get-in-touch .conteiner{
-        display: flex;
-        flex-wrap: nowrap;
-    }
 }
 .form{
     margin-bottom: 20px;
@@ -254,12 +189,6 @@ p{
     justify-content: space-around;
     margin-bottom: 200px;
 }
-@media only screen and (min-width: 480px) {
-    .lists{
-        display: flex;
-        flex-direction: row;
-    }
-}
 .lists li{
     text-align:left;
 }
@@ -270,4 +199,55 @@ p{
 .lists h3{
     font-size: 19px;
     font-weight: bold;
+}
+@media only screen and (min-width: 480px) {
+    .what-is{
+      display: flex;
+      flex-direction: row;
+      padding: 3% 2% 3% 2%;
+    }
+    .what-is img{
+        width: 35%;
+    }
+    .what-is div{
+        padding: 0 2% 0 2%;
+    }
+    .lists{
+        display: flex;
+        flex-direction: row;
+    }
+    .get-in-touch .conteiner{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .about img{
+        width: 35%;
+        max-width: 450px;        
+    }
+    .about p{
+        width: 65%;
+        max-width: 560px;
+    }
+    .about-bottom{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .about-top{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .w-choose article{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+@media only screen and (min-width: 768px) {
+    main {
+        margin-left: 30%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    main {
+        margin-left: 300px;
+    }
 }

@@ -8,6 +8,7 @@ aside {
         width: 30%;
         max-width: 300px;
         height: auto;
+        font-family: 'Roboto', sans-serif;
         top: 100px;
         left: 0;
         bottom: 100px;
@@ -15,7 +16,6 @@ aside {
         text-align: left;
     }
     aside div{
-        font-family: 'Roboto', sans-serif;
         font-size: 30px;
         font-weight: bold;
         color: #373867;
@@ -33,7 +33,6 @@ aside {
     aside li{
         background-color: #ffffff;
         border-bottom: 3px solid #373867;
-        font-family: 'Roboto', sans-serif;
         margin-top: 6%;
         padding: 2% 0 2% 3%;
         width: 90%;

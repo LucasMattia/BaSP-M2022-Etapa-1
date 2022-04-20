@@ -25,5 +25,8 @@ We worked principaly on the CSS style for the landing page. Link: https://lucasm
 ### week-04
 we worked on the css responsive layout funcionalities. Link: https://lucasmattia.github.io/BaSP-M2022-Etapa-1/semana-04/
 
+### week-05
+We worked on the css responsive layout done the last week, making some corrections. Link: https://lucasmattia.github.io/BaSP-M2022-Etapa-1/semana-04/
+In adition, we worked over six JavaScript Exercises. Link: https://lucasmattia.github.io/BaSP-M2022-Etapa-1/semana-05/
 
 > Lucas Mattia, member of Trackgenix development team.
