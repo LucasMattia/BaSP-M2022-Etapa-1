@@ -1,0 +1,271 @@
+/* general */
+main{
+    font-family: 'roboto', sans-serif;
+    color: #373867;
+}
+
+h2{
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 0 50px 0;
+}
+p{
+    font-size: 20px;
+    font-weight: 400;
+}
+/*  HOME  */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    border-bottom: 75px solid #49a37b;
+    background-image: url("../img/background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.home img{
+    height: 39vh;
+}
+/*   WHAT IS TRACKGENIX?  */
+.what-is{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 75px solid #49a37b;
+}
+.what-is h3{
+    text-align: center;
+    color: #373867b3;
+    font-size: 30px;
+    font-weight: bold;
+    height: auto;
+    padding-bottom: 30px;
+}
+.what-is p{
+    text-align: center;
+    padding: 0 5px 20px 5px;
+}
+.what-is img{
+    width: 90%;
+    height: auto;
+}
+/*  WHAT CAN I DO & WHY CHOOSE ME?  */
+.w-choose{
+    border-bottom: 75px solid #49a37b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.w-choose article{
+    display: flex;
+    margin: 0 30px 0 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.w-choose .element{
+    margin: 20px 5px 0 5px;
+    min-width: 200px;
+    max-width: 450px;
+}
+.w-choose .element img{
+    float: left;
+    width: 15%;
+    margin: 0 20px 20px 0;
+}
+.w-choose h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+/*  ABOUT US  */
+.about{
+    border-bottom: 75px solid #49a37b;
+    padding: 0 2% 0 2%;
+}
+.about p{
+    margin: 15px;
+}
+.about img{
+    width: 90%;
+}
+.about-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.about-bottom{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+/*  GET IN TOUCH  */
+.get-in-touch{
+    border-bottom: 75px solid #49a37b;
+    padding: 0 2% 0 2%;
+}
+.get-in-touch .conteiner{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.form{
+    margin-bottom: 20px;
+}
+.form input{
+    width: 295px;
+    height: 40px;   
+    border: 1px solid #373867;
+    border-radius: 4px;
+    padding-left: 5px;
+    font: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #373867;
+    margin-bottom: 20px;
+}
+.form label{
+    display: block;
+    margin-bottom: 10px;
+}
+#sector{
+    width: 304px;
+    height: 40px;   
+    border: 1px solid #373867;
+    border-radius: 4px;
+    padding: 0 5px 0 5px;
+    font: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #373867;
+    margin-bottom: 20px;
+}
+#message{
+    width: 295px;
+    height: 100px;   
+    border: 1px solid #373867;
+    border-radius: 4px;
+    padding-left: 5px;
+    font: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #373867;
+    margin-bottom: 20px;
+}
+#submit{
+    background-color: #aace98;
+}
+.conteiner article{
+    width: 300px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.conteiner article img{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+.get-in-touch article{
+    margin: 5px;
+}
+.get-in-touch span{
+    display: inline-block;
+}
+.get-in-touch article img{
+    margin: 5px;
+}
+.conteiner article{
+    width: 90%;
+    max-width: 425px;
+    margin-bottom: 50px;
+}
+.conteiner article div{
+    margin-bottom: 10px;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+.lists li{
+    text-align:left;
+}
+.lists div{
+    margin-top: 20px;
+    text-align: left;
+}
+.lists h3{
+    font-size: 19px;
+    font-weight: bold;
+}
+.lists a{
+    text-decoration: none;
+}
+@media only screen and (min-width: 480px) {
+    .what-is{
+      display: flex;
+      flex-direction: row;
+      padding: 3% 2% 3% 2%;
+    }
+    .what-is img{
+        width: 35%;
+    }
+    .what-is div{
+        padding: 0 2% 0 2%;
+    }
+    .w-choose article{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .about img{
+        width: 35%;
+        max-width: 450px;
+        min-width: 225px;        
+    }
+    .about p{
+        width: 65%;
+        max-width: 560px;
+    }
+    .about-bottom{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .about-top{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .get-in-touch .conteiner{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .lists{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media only screen and (min-width: 768px) {
+    main {
+        margin-left: 30%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    main {
+        margin-left: 300px;
+    }
+}
