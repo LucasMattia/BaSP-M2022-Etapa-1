@@ -4,21 +4,21 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TRACKGENIX</title>
+        <title>TRACKGENIX - Login</title>
         <meta name="description" content="trackgenix landing">
         <meta name="keywords" content="trackgenix, trackgenix s.a., trackgenix hour conter">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/header.css">
-        <link rel="stylesheet" href="./css/footer.css">
-        <link rel="stylesheet" href="./css/sidebar.css">
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/sidebar.css">
+        <link rel="stylesheet" href="../styles/login.css">
     </head>
     <body>
         <header>
             <div class="conteiner">
-                <img src="img/burger.png" id="menu" alt="Desplegable Menu">
-                <img src="img/header-icon.png" id="icon" alt="TRACKGENIX logo">
+                <img src="../assets/img/burger.png" id="menu" alt="Desplegable Menu">
+                <img src="../assets/img/header-icon.png" id="icon" alt="TRACKGENIX logo">
                 <button>Sign Up</button>
             </div>
         </header>
@@ -27,19 +27,7 @@
                 <div>Shortcuts</div>
                 <ul>
                     <li>
-                        <a href="#home">Homepage</a>
-                    </li>
-                    <li>
-                        <a href="#what-is">What is trackgenix?</a>
-                    </li>
-                    <li>
-                        <a href="#w-choose">Why choose Trackgenix?</a>
-                    </li>
-                    <li>
-                        <a href="#about">About us</a>
-                    </li>
-                    <li>
-                        <a href="#get-in-touch">Get in touch</a>
+                        <a href="./index.html">Homepage</a>
                     </li>
                     <li>
                         <a href="#">Log In</a>
@@ -48,230 +36,53 @@
             </nav>
         </aside>
         <main>
-            <section id="home" class="home">
-                <h1>TRACKGENIX</h1>
-                <img src="img/logo-trackgenix.png" alt="Trackgenix logo">
-            </section>
-            <section id="what-is" class="what-is">
-                <div>
-                    <h2>Hi, i'm Trackgenix by Baltazar's Team</h2>
-                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Reiciendis asperiores placeat dolores omnis explicabo dignissimos nostrum 
-                        perferendis alias, quia reprehenderit doloribus, 
-                        sunt vel sed voluptatibus obcaecati adipisci itaque, rem laboriosam.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Reiciendis asperiores placeat dolores omnis explicabo dignissimos nostrum 
-                        perferendis alias, quia reprehenderit doloribus, 
-                        sunt vel sed voluptatibus obcaecati adipisci itaque, rem laboriosam.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    </p>
-                </div>
-                <img src="img/clock.jpg" alt="clock">
-            </section>
-            <section id="w-choose" class="w-choose">
-                <h2>What can I do & why choose me?</h2>
-                <article class="conteiner">
-                    <div class="right">
-                        <div class="element">
-                            <img src="img/logo-1.png" alt="shield logo">
-                            <h3>Decision Making</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reiciendis asperiores placeat dolores omnis explicabo.
-                            </p>
+            <div class="cont">
+                <form>
+                    <div class="sign">
+                        <h1>Log In</h1>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Click here to write">
+                            <div class="errorMsg" id="email-error">Error: error message</div>
                         </div>
-                        <div class="element">
-                            <img src="img/logo-4.png" alt="net logo">
-                            <h3>Resource management</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reiciendis asperiores placeat dolores omnis explicabo.
-                            </p>
-                        </div>
-                        <div class="element">
-                            <img src="img/logo-2.png" alt="graph logo">
-                            <h3>Reports and Traceability</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reiciendis asperiores placeat dolores omnis explicabo.
-                            </p>
+                        <div>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" placeholder="Click here to write">
+                            <div class="errorMsg" id="pass-error">Error: error message</div>
                         </div>
                     </div>
-                    <div class="left">
-                        <div class="element">
-                            <img src="img/logo-5.png" alt="face logo">
-                            <h3>Leadership</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reiciendis asperiores placeat dolores omnis explicabo.
-                            </p>
-                        </div>
-                        <div class="element">
-                            <img src="img/logo-3.png" alt="paper plane logo">
-                            <h3>Productivity Booster</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reiciendis asperiores placeat dolores omnis explicabo.
-                            </p>
-                        </div>
-                        <div class="element"> 
-                            <img src="img/logo-6.png" alt="clock logo">  
-                            <h3>Hours Log</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reiciendis asperiores placeat dolores omnis explicabo.
-                            </p>
-                        </div>
+                    <div class="buttons">
+                        <input type="submit" name="submit" value="Log-in" class="button" id="submit">
+                        <button class="button" id="cancel">cancel</button>
                     </div>
-                </article>
-            </section>
-            <section id="about" class="about">
-                <h2 class="h2">About Us</h2>
-                <article>
-                    <div class="about-top">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Reiciendis asperiores placeat dolores omnis explicabo dignissimos nostrum 
-                            perferendis alias, quia reprehenderit doloribus, 
-                            sunt vel sed voluptatibus obcaecati adipisci itaque, rem laboriosam.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Reiciendis asperiores placeat dolores omnis explicabo dignissimos nostrum 
-                            perferendis alias, quia reprehenderit doloribus, 
-                            sunt vel sed voluptatibus obcaecati adipisci itaque, rem laboriosam.
-                        </p>
-                        <img src="img/wg1.jpg" alt="working group 1">
-                    </div>
-                    <div class="about-bottom">
-                        <img src="img/wg2.jpg" alt="working group 2">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Reiciendis asperiores placeat dolores omnis explicabo dignissimos nostrum 
-                            perferendis alias, quia reprehenderit doloribus, 
-                            sunt vel sed voluptatibus obcaecati adipisci itaque, rem laboriosam.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Reiciendis asperiores placeat dolores omnis explicabo dignissimos nostrum 
-                            perferendis alias, quia reprehenderit doloribus, 
-                            sunt vel sed voluptatibus obcaecati adipisci itaque, rem laboriosam.
-                        </p>
-                    </div>
-                </article>
-            </section>
-            <section id="get-in-touch" class="get-in-touch">
-                <h2>Contact Us</h2>
-                <div class="conteiner">
-                    <form class="form">
-                        <div>
-                            <label class="label" for="user">Username</label>
-                            <input type="text" name="user" id="user" placeholder="Click on me to write">
-                        </div>
-                        <div>
-                            <label class="label" for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Click on me to write">
-                        </div>
-                        <div>
-                            <label class="label" for="phone">Phone number (optional)</label>
-                            <input type="tel" name="phone" id="phone">
-                        </div>
-                        <div>
-                            <label class="label" for="sector">Sector</label>
-                            <select name="Sector" id="sector">
-                                <option value="hr">Human Resources</option>
-                                <option value="sys">Systems</option>
-                                <option value="com">Comercialization</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="label" for="message">Leave a message</label>
-                            <textarea name="message" id="message" placeholder="Click on me to write"></textarea>
-                        </div>
-                        <input type="submit" name="submit" value="Submit" id="submit">
-                    </form>
-                    <article>
-                        <div>
-                            <img src="img/logo-7.png" alt="house">
-                            <address>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reiciendis asperiores placeat dolores omnis explicabo.
-                            </address>
-                        </div>
-                        <div>
-                            <img src="img/logo-8.png" alt="telephone">
-                            <div id="exeptional">
-                                <address>974040000<span>/974040001</span>/974040002</address>
-                                <address>+99 9 999 999-9999</address>
-                                <address>+11 1 111 111-1111</address>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="img/logo-9.png" alt="mail">
-                            <address>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reiciendis asperiores placeat dolores omnis explicabo.
-                            </address>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            <section class="lists">
-                <div>
-                    <h3>Products:</h3>
-                    <ol>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Downloads</a></li>
-                        <li><a href="#">Integrations</a></li>
-                        <li><a href="#">Aditional Features</a></li>
-                    </ol>
-                </div>
-                <div>
-                    <h3>Busines:</h3>
-                    <ol>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ol>
-                </div>
-                <div>
-                    <h3>Suport:</h3>
-                    <ol>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Tutorials</a></li>
-                        <li><a href="#">API</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ol>
-                </div>
-            </section>
+                </form>
+            </div>
         </main>
         <footer>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com" target="_blank">
-                        <img src="img/linkedin-icon.png" alt="linkedin logo">
+                        <img src="../assets/img/linkedin-icon.png" alt="linkedin logo">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.twitter.com" target="_blank">
-                        <img src="img/twitter-icon.png" alt="twitter logo">
+                        <img src="../assets/img/twitter-icon.png" alt="twitter logo">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com" target="_blank">
-                        <img src="img/fb-icon.png" alt="facebook logo">
+                        <img src="../assets/img/fb-icon.png" alt="facebook logo">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com" target="_blank">
-                        <img src="img/ig-icon.png" alt="instagram logo">
+                        <img src="../assets/img/ig-icon.png" alt="instagram logo">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.github.com" target="_blank">
-                        <img src="img/github-icon.png" alt="github logo">
+                        <img src="../assets/img/github-icon.png" alt="github logo">
                     </a>
                 </li>
             </ul>           

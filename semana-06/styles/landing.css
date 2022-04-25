@@ -23,7 +23,7 @@ p{
     align-items: center;
     height: 90vh;
     border-bottom: 75px solid #49a37b;
-    background-image: url("../img/background-img.jpg");
+    background-image: url("../assets/img/background-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
