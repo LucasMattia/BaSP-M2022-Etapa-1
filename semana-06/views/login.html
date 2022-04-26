@@ -19,7 +19,7 @@
             <div class="conteiner">
                 <img src="../assets/img/burger.png" id="menu" alt="Desplegable Menu">
                 <img src="../assets/img/header-icon.png" id="icon" alt="TRACKGENIX logo">
-                <button>Sign Up</button>
+                <button id="signUpButton">Sign Up</button>
             </div>
         </header>
         <aside>
@@ -43,12 +43,12 @@
                         <div>
                             <label for="email">Email:</label>
                             <input type="email" name="email" id="email" placeholder="Click here to write">
-                            <div class="errorMsg" id="email-error">Error: error message</div>
+                            <div class="errorMsg" id="email-error">Error: invalid email</div>
                         </div>
                         <div>
                             <label for="password">Password:</label>
                             <input type="password" name="password" id="password" placeholder="Click here to write">
-                            <div class="errorMsg" id="pass-error">Error: error message</div>
+                            <div class="errorMsg" id="pass-error">Error: invalid password</div>
                         </div>
                     </div>
                     <div class="buttons">
@@ -89,5 +89,6 @@
             <div>Rosario, Argentina.</div>
             <div>Copyright &copy; 2022 Trackgenix S.A. All rights reserved.</div>
         </footer>
+        <script src="../javascript/login.js"></script>
     </body>
 </html>
