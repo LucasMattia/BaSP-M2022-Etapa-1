@@ -217,3 +217,41 @@ inputLoc.onfocus = function (){
     addErrorMsg.style.visibility = 'hidden';
     inputAdd.style.color = '#373867';
 }
+
+// Repeat password Validation
+function validateRePass(rePass) {
+    var re = /^([a-zA-Z0-9]+).{8,}$/;
+    return re.test(rePass);
+}
+var inputRePass = document.getElementById('re-pass');
+inputRePass.onblur = function (){
+    if(validateRePass(inputRePass.value)){
+        if(inputPass.value.localeCompare(inputRePass.value) == 0){
+            inputRePass.style.border = '2px solid lightgreen';
+        }else{
+            var rePassErrorMsg = document.getElementById('re-pass-error');
+            rePassErrorMsg.style.visibility = 'visible';
+            rePassErrorMsg.textContent = "Error: passwords does not match";
+            inputRePass.style.border = '2px solid red';
+            inputRePass.style.color = 'red';
+        }
+    }else{
+        var rePassErrorMsg = document.getElementById('re-pass-error');
+        rePassErrorMsg.style.visibility = 'visible';
+        rePassErrorMsg.textContent = 'Error: password invalid';
+        inputRePass.style.border = '2px solid red';
+        inputRePass.style.color = 'red';
+    }
+
+}
+inputRePass.onfocus = function (){
+    var rePassErrorMsg = document.getElementById('re-pass-error');
+    rePassErrorMsg.style.visibility = 'hidden';
+    inputRePass.style.color = '#373867';
+}
+
+// Birth date Validation
+var inputBirthDate = document.getElementById('birth-date');
+inputBirthDate.onblur = function (){
+    console.log(inputBirthDate.value);
+}
