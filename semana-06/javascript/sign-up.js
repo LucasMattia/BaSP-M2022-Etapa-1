@@ -107,3 +107,113 @@ inputLastName.onfocus = function (){
     lastNameErrorMsg.style.visibility = 'hidden';
     inputLastName.style.color = '#373867';
 }
+
+// Last Name validation
+function validateLastName(lastName) {
+    var re = /^([A-Za-z]+){3,}$/;
+    return re.test(lastName);
+}
+var inputLastName = document.getElementById('l-name');
+inputLastName.onblur = function (){
+    if(validateLastName(inputLastName.value)){
+        inputLastName.style.border = '2px solid lightgreen';
+    }else{
+        var lastNameErrorMsg = document.getElementById('l-name-error');
+        lastNameErrorMsg.style.visibility = 'visible';
+        inputLastName.style.border = '2px solid red';
+        inputLastName.style.color = 'red';
+    }
+}
+inputLastName.onfocus = function (){
+    var lastNameErrorMsg = document.getElementById('l-name-error');
+    lastNameErrorMsg.style.visibility = 'hidden';
+    inputLastName.style.color = '#373867';
+}
+
+// DNI validation
+function validateDni(dni) {
+    var re = /^\d{7,}$/;
+    return re.test(dni);
+}
+var inputDni = document.getElementById('dni');
+inputDni.onblur = function (){
+    if(validateDni(inputDni.value)){
+        inputDni.style.border = '2px solid lightgreen';
+    }else{
+        var dniErrorMsg = document.getElementById('dni-error');
+        dniErrorMsg.style.visibility = 'visible';
+        inputDni.style.border = '2px solid red';
+        inputDni.style.color = 'red';
+    }
+}
+inputDni.onfocus = function (){
+    var dniErrorMsg = document.getElementById('dni-error');
+    dniErrorMsg.style.visibility = 'hidden';
+    inputDni.style.color = '#373867';
+}
+
+// Zip code Validation
+function validateZip(zip) {
+    var re = /^\d{3,}$/;
+    return re.test(zip);
+}
+var inputZip = document.getElementById('z-code');
+inputZip.onblur = function (){
+    if(validateZip(inputZip.value)){
+        inputZip.style.border = '2px solid lightgreen';
+    }else{
+        var zipErrorMsg = document.getElementById('z-code-error');
+        zipErrorMsg.style.visibility = 'visible';
+        inputZip.style.border = '2px solid red';
+        inputZip.style.color = 'red';
+    }
+}
+inputZip.onfocus = function (){
+    var zipErrorMsg = document.getElementById('z-code-error');
+    zipErrorMsg.style.visibility = 'hidden';
+    inputZip.style.color = '#373867';
+}
+
+// Pasword Validation
+function validateLoc(location) {
+    var re = /^([a-zA-Z]{3})[a-zA-Z0-9]+$/;
+    return re.test(location);
+}
+var inputLoc = document.getElementById('location');
+inputLoc.onblur = function (){
+    if(validateLoc(inputLoc.value)){
+        inputLoc.style.border = '2px solid lightgreen';
+    }else{
+        var locErrorMsg = document.getElementById('loc-error');
+        locErrorMsg.style.visibility = 'visible';
+        inputLoc.style.border = '2px solid red';
+        inputLoc.style.color = 'red';
+    }
+}
+inputLoc.onfocus = function (){
+    var locErrorMsg = document.getElementById('loc-error');
+    locErrorMsg.style.visibility = 'hidden';
+    inputLoc.style.color = '#373867';
+}
+
+// Address Validation
+function validateAdd(Address) {
+    var re = /^([a-zA-Z]{4,})\s([a-zA-Z0-9]+)$/;
+    return re.test(Address);
+}
+var inputAdd = document.getElementById('address');
+inputAdd.onblur = function (){
+    if(validateAdd(inputAdd.value)){
+        inputAdd.style.border = '2px solid lightgreen';
+    }else{
+        var addErrorMsg = document.getElementById('add-error');
+        addErrorMsg.style.visibility = 'visible';
+        inputAdd.style.border = '2px solid red';
+        inputAdd.style.color = 'red';
+    }
+}
+inputLoc.onfocus = function (){
+    var addErrorMsg = document.getElementById('add-error');
+    addErrorMsg.style.visibility = 'hidden';
+    inputAdd.style.color = '#373867';
+}
