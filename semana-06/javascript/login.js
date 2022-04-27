@@ -1,5 +1,6 @@
-var signUp = document.getElementById('signUpButton').addEventListener('click', buttonClick);
-function buttonClick(){
+//Sign Up button
+var signUp = document.getElementById('signUpButton').addEventListener('click', toSignUp);
+function toSignUp(){
     window.location.replace("./sign-up.html");
 }
 
@@ -8,8 +9,6 @@ function validateEmail(email) {
     var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return re.test(email);
 }
-
-// Email Validation
 var inputEmail = document.getElementById('email');
 inputEmail.onblur = function (){
     if(validateEmail(inputEmail.value)){
@@ -28,8 +27,33 @@ inputEmail.onfocus = function (){
 }
 
 // Pasword Validation
+function validatePass(pass) {
+    var re = /^([a-zA-Z0-9_\-\.]+).{8,}$/
+    return re.test(pass);
+}
 var inputPass = document.getElementById('password');
 inputPass.onblur = function (){
-    console.log(inputPass.value);
+    if(validatePass(inputPass.value)){
+        inputPass.style.border = '2px solid lightgreen';
+    }else{
+        var passErrorMsg = document.getElementById('pass-error');
+        passErrorMsg.style.visibility = 'visible';
+        inputPass.style.border = '2px solid red';
+        inputPass.style.color = 'red';
+    }
+}
+inputPass.onfocus = function (){
+    var passErrorMsg = document.getElementById('pass-error');
+    passErrorMsg.style.visibility = 'hidden';
+    inputPass.style.color = '#373867';
 }
 
+//Log In button
+var submit = document.getElementById('submit').addEventListener('click', buttonClick);
+function buttonClick(){
+    if(validatePass(inputPass.value) && validateEmail(inputEmail.value)){
+        window.alert('Successful login!\n\nEmail: '+ inputEmail.value + '\nPassword: ' + inputPass.value);
+    }else{
+        window.alert('Error: Email or password invalid, please try again.');
+    }
+}

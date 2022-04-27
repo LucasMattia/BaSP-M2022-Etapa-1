@@ -23,7 +23,7 @@ main{
 }
 .buttons{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 40px;
 }
 .button{
@@ -33,11 +33,6 @@ main{
     width: 100px;
     height: 35px;
     font-size: 15px;
-}
-#cancel{
-    background-color: white;
-    border: 1px solid red;
-    color: red;
 }
 #submit{
     background-color: #aace9b;

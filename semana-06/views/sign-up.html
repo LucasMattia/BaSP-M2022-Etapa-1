@@ -42,18 +42,18 @@
                     <div class="sign">
                         <div>
                             <label for="first-name">First name:</label>
-                            <input type="text" name="first-name" id="first-name" placeholder="Click here to write">
-                            <div class="errorMsg">Error: error message</div>
+                            <input type="text" name="first-name" id="f-name" placeholder="Click here to write">
+                            <div class="errorMsg" id="f-name-error">Error: invalid name</div>
                         </div>
                         <div>
                             <label for="last-name">Last name:</label>
-                            <input type="text" name="last-name" id="last-name" placeholder="Click here to write">
-                            <div class="errorMsg">Error: error message</div>
+                            <input type="text" name="last-name" id="l-name" placeholder="Click here to write">
+                            <div class="errorMsg" id="l-name-error">Error: invalid name</div>
                         </div>
                         <div>
                             <label for="dni">DNI:</label>
                             <input type="number" name="dni" id="dni" placeholder="Click here to write">
-                            <div class="errorMsg">Error: error message</div>
+                            <div class="errorMsg">Error: invalid DNI</div>
                         </div>
                         <div>
                             <label for="birth-date">Birth date:</label>
@@ -62,50 +62,42 @@
                         </div>
                         <div>
                             <label for="telephone">Phone number:</label>
-                            <input type="tel" name="telephone" id="telephone" placeholder="Click here to write">
-                            <div class="errorMsg">Error: error message</div>
+                            <input type="tel" name="telephone" id="phone" placeholder="Click here to write">
+                            <div class="errorMsg" id="phone-error">Error: invalid phone number</div>
                         </div>
                         <div>
                             <label for="address">Address:</label>
                             <input type="text" name="address" id="address" placeholder="Click here to write">
-                            <div class="errorMsg">Error: error message</div>
+                            <div class="errorMsg">Error: invalid address</div>
                         </div>
                         <div>
                             <label for="location">Location:</label>
                             <input type="text" name="location" id="location" placeholder="Click here to write">
-                            <div class="errorMsg">Error: error message</div>
+                            <div class="errorMsg">Error: invalid location</div>
                         </div>
                         <div>
                             <label for="z-code">Zip code:</label>
                             <input type="number" name="z-code" id="z-code" placeholder="Click here to write">
-                            <div class="errorMsg">Error: error message</div>
+                            <div class="errorMsg">Error: invalid zip code</div>
                         </div>
                         <div>
                             <label for="email">Email:</label>
                             <input type="email" name="email" id="email" placeholder="Click here to write">
-                            <div class="errorMsg" id="email-error">Error: error message</div>
-                        </div>
-                        <div>
-                            <label for="location">Location:</label>
-                            <input type="text" name="location" id="location" placeholder="Click here to write">
-                            <div class="errorMsg">Error: error message</div>
+                            <div class="errorMsg" id="email-error">Error: invalid email</div>
                         </div>
                         <div>
                             <label for="password">Password:</label>
                             <input type="password" name="password" id="password" placeholder="Click here to write">
-                            <div class="errorMsg">Error: error message</div>
+                            <div class="errorMsg" id="pass-error">Error: invalid password</div>
                         </div>
                         <div>
                             <label for="rep-password">Repeat Password:</label>
                             <input type="password" name="rep-password" id="rep-password" placeholder="Click here to write">
-                            <div class="errorMsg">Error: error message</div>
+                            <div class="errorMsg">Error: invalid Password</div>
                         </div>
-                        <div>
-                            <input type="submit" name="submit" value="create account" id="submit">
-                        </div>
-                        <div>
-                            <button>cancel</button>
-                        </div>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" name="submit" value="Create account" id="submit">
                     </div>
                 </form>
             </div>
