@@ -108,28 +108,6 @@ inputLastName.onfocus = function (){
     inputLastName.style.color = '#373867';
 }
 
-// Last Name validation
-function validateLastName(lastName) {
-    var re = /^([A-Za-z]+){3,}$/;
-    return re.test(lastName);
-}
-var inputLastName = document.getElementById('l-name');
-inputLastName.onblur = function (){
-    if(validateLastName(inputLastName.value)){
-        inputLastName.style.border = '2px solid lightgreen';
-    }else{
-        var lastNameErrorMsg = document.getElementById('l-name-error');
-        lastNameErrorMsg.style.visibility = 'visible';
-        inputLastName.style.border = '2px solid red';
-        inputLastName.style.color = 'red';
-    }
-}
-inputLastName.onfocus = function (){
-    var lastNameErrorMsg = document.getElementById('l-name-error');
-    lastNameErrorMsg.style.visibility = 'hidden';
-    inputLastName.style.color = '#373867';
-}
-
 // DNI validation
 function validateDni(dni) {
     var re = /^\d{7,}$/;
@@ -242,7 +220,6 @@ inputRePass.onblur = function (){
         inputRePass.style.border = '2px solid red';
         inputRePass.style.color = 'red';
     }
-
 }
 inputRePass.onfocus = function (){
     var rePassErrorMsg = document.getElementById('re-pass-error');
@@ -251,7 +228,37 @@ inputRePass.onfocus = function (){
 }
 
 // Birth date Validation
+function validateBirthDate(Address) {
+    var re = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/;
+    return re.test(Address);
+}
 var inputBirthDate = document.getElementById('birth-date');
 inputBirthDate.onblur = function (){
-    console.log(inputBirthDate.value);
+    var bDate = inputBirthDate.value;
+    if(validateBirthDate(bDate)){
+        var year = bDate.substring(0,4);
+        var month = bDate.substring(5,7);
+        var day = bDate.substring(8,10);
+        if(Number(year) <= 1920 || Number(year) >= 2004){
+            var bDateErrorMsg = document.getElementById('b-date-error');
+            bDateErrorMsg.style.visibility = 'visible';
+            inputBirthDate.style.border = '2px solid red';
+            bDateErrorMsg.textContent = 'year must be between 1920 and 2002';
+            inputBirthDate.style.color = 'red';
+        }else{
+            bDate = (day + '/' + month + '/' + year);
+            inputBirthDate.style.border = '2px solid lightgreen';
+        }
+    }else{
+        var bDateErrorMsg = document.getElementById('b-date-error');
+        bDateErrorMsg.style.visibility = 'visible';
+        inputBirthDate.style.border = '2px solid red';
+        inputBirthDate.style.color = 'red';
+    }
+}
+inputBirthDate.onfocus = function (){
+    var bDateErrorMsg = document.getElementById('b-date-error');
+    bDateErrorMsg.textContent = 'Error: invalid birth date';
+    bDateErrorMsg.style.visibility = 'hidden';
+    inputRePass.style.color = '#373867';
 }
