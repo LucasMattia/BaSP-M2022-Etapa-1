@@ -228,13 +228,14 @@ inputRePass.onfocus = function (){
 }
 
 // Birth date Validation
+var bDate;
 function validateBirthDate(Address) {
     var re = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/;
     return re.test(Address);
 }
 var inputBirthDate = document.getElementById('birth-date');
 inputBirthDate.onblur = function (){
-    var bDate = inputBirthDate.value;
+    bDate = inputBirthDate.value;
     if(validateBirthDate(bDate)){
         var year = bDate.substring(0,4);
         var month = bDate.substring(5,7);
@@ -248,6 +249,7 @@ inputBirthDate.onblur = function (){
         }else{
             bDate = (day + '/' + month + '/' + year);
             inputBirthDate.style.border = '2px solid lightgreen';
+            console.log(bDate);
         }
     }else{
         var bDateErrorMsg = document.getElementById('b-date-error');
