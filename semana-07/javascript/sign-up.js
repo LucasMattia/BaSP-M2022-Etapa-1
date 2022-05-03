@@ -322,22 +322,24 @@ inputAdd.onfocus = function (){
 }
 
 // Repeat password Validation
-var inputRePass = document.getElementById('re-pass');
-inputRePass.onblur = function (){
-    if(validatePass(inputRePass.value)){
-        if(inputPass.value.localeCompare(inputRePass.value) == 0){
-            inputRePass.style.border = '2px solid lightgreen';
+function validateRePass(rePass){
+    if(validatePass(rePass)){
+        if(inputPass.value.localeCompare(rePass) == 0){
+            return true;
         }else{
-            var rePassErrorMsg = document.getElementById('re-pass-error');
-            rePassErrorMsg.style.visibility = 'visible';
-            rePassErrorMsg.textContent = "Error: passwords does not match";
-            inputRePass.style.border = '2px solid red';
-            inputRePass.style.color = 'red';
+            return false;
         }
     }else{
+        return false;
+    }
+}
+var inputRePass = document.getElementById('re-pass');
+inputRePass.onblur = function (){
+    if(validateRePass(inputRePass.value)){
+            inputRePass.style.border = '2px solid lightgreen';
+        }else{
         var rePassErrorMsg = document.getElementById('re-pass-error');
         rePassErrorMsg.style.visibility = 'visible';
-        rePassErrorMsg.textContent = 'Error: password invalid';
         inputRePass.style.border = '2px solid red';
         inputRePass.style.color = 'red';
     }
@@ -350,9 +352,12 @@ inputRePass.onfocus = function (){
 
 // Birth date Validation
 var bDate;
-function validateBirthDate(Address) {
-    var re = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/;
-    return re.test(Address);
+function validateBirthDate(address) {
+    if(address[4] != '-'){
+        return false;
+    }else{
+        return true;
+    }
 }
 var inputBirthDate = document.getElementById('birth-date');
 inputBirthDate.onblur = function (){
@@ -368,7 +373,7 @@ inputBirthDate.onblur = function (){
             bDateErrorMsg.textContent = 'year must be between 1920 and 2002';
             inputBirthDate.style.color = 'red';
         }else{
-            bDate = (day + '/' + month + '/' + year);
+            bDate = (month + '/' + day + '/' + year);
             inputBirthDate.style.border = '2px solid lightgreen';
             console.log(bDate);
         }
@@ -385,3 +390,36 @@ inputBirthDate.onfocus = function (){
     bDateErrorMsg.style.visibility = 'hidden';
     inputRePass.style.color = '#373867';
 }
+
+// var submit = document.getElementById('submit').addEventListener('click', buttonClick);
+// function buttonClick(event){
+//     event.preventDefault();
+//     if(validatePass(inputPass.value)
+//     && validateEmail(inputEmail.value)
+//     && validateFirName(inputFirName.value)
+//     && validateLastName(inputLastName.value)
+//     && validateDni(inputDni.value)
+//     && validateBirthDate(inputBirthDate.value)
+//     && validatePhone(inputPhone.value)
+//     && validateAdd(inputAdd.value)
+//     && validateLoc(inputLoc.value)
+//     && validateZip(inputZip.value)
+//     && validateRePass(inputRePass.value)){
+//         fetch("https://basp-m2022-api-rest-server.herokuapp.com/login?email="+ inputEmail.value +"&password=" + inputPass.value)
+//             .then (function(response){
+//                 return response.json();
+//             })
+//             .then (function(jsonresponse){
+//                 if(jsonresponse.success){
+//                     window.alert(jsonresponse.msg);
+//                 }else{
+//                     window.alert(jsonresponse.msg);
+//                 }
+//             })
+//             .catch (function (error){
+//                 console.log("error: ", error);
+//                 console.log("Error: respuesta fallida");
+//             });
+//         }else{
+//         window.alert('Input Error: invalid inputs, please try again.');
+//     }

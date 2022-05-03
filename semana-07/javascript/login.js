@@ -76,10 +76,25 @@ inputPass.onfocus = function (){
 
 //Log In button
 var submit = document.getElementById('submit').addEventListener('click', buttonClick);
-function buttonClick(){
+function buttonClick(event){
+    event.preventDefault();
     if(validatePass(inputPass.value) && validateEmail(inputEmail.value)){
-        window.alert('Successful login!\n\nEmail: '+ inputEmail.value + '\nPassword: ' + inputPass.value);
-    }else{
+        fetch("https://basp-m2022-api-rest-server.herokuapp.com/login?email="+ inputEmail.value +"&password=" + inputPass.value)
+            .then (function(response){
+                return response.json();
+            })
+            .then (function(jsonresponse){
+                if(jsonresponse.success){
+                    window.alert("email:\t" + inputEmail.value + "\npassword:\t" + inputPass.value + "\n\n" + jsonresponse.msg);
+                }else{
+                    window.alert(jsonresponse.msg);
+                }
+            })
+            .catch (function (error){
+                console.log("error: ", error);
+                console.log("Error: respuesta fallida");
+            });
+        }else{
         window.alert('Error: Email or password invalid, please try again.');
     }
 }
