@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TRACKGENIX - Login</title>
+        <meta name="description" content="trackgenix landing">
+        <meta name="keywords" content="trackgenix, trackgenix s.a., trackgenix hour conter">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/sidebar.css">
+        <link rel="stylesheet" href="../styles/login.css">
+    </head>
+    <body>
+        <header>
+            <div class="conteiner">
+                <img src="../assets/img/burger.png" id="menu" alt="Desplegable Menu">
+                <img src="../assets/img/header-icon.png" id="icon" alt="TRACKGENIX logo">
+                <button id="signUpButton">Sign Up</button>
+            </div>
+        </header>
+        <aside>
+            <nav>
+                <div>Shortcuts</div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Homepage</a>
+                    </li>
+                    <li>
+                        <a href="#">Log In</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div class="cont">
+                <form>
+                    <div class="sign">
+                        <h1>Log In</h1>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Click here to write">
+                            <div class="errorMsg" id="email-error">Error: invalid email</div>
+                        </div>
+                        <div>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" placeholder="Click here to write">
+                            <div class="errorMsg" id="pass-error">Error: invalid password</div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" name="submit" value="Log-in" class="button" id="submit">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="../assets/img/linkedin-icon.png" alt="linkedin logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="../assets/img/twitter-icon.png" alt="twitter logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../assets/img/fb-icon.png" alt="facebook logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../assets/img/ig-icon.png" alt="instagram logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com" target="_blank">
+                        <img src="../assets/img/github-icon.png" alt="github logo">
+                    </a>
+                </li>
+            </ul>           
+            <div>Rosario, Argentina.</div>
+            <div>Copyright &copy; 2022 Trackgenix S.A. All rights reserved.</div>
+        </footer>
+        <script src="../javascript/login.js"></script>
+    </body>
+</html>
