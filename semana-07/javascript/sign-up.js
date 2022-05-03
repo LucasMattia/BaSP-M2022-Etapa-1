@@ -391,35 +391,47 @@ inputBirthDate.onfocus = function (){
     inputRePass.style.color = '#373867';
 }
 
-// var submit = document.getElementById('submit').addEventListener('click', buttonClick);
-// function buttonClick(event){
-//     event.preventDefault();
-//     if(validatePass(inputPass.value)
-//     && validateEmail(inputEmail.value)
-//     && validateFirName(inputFirName.value)
-//     && validateLastName(inputLastName.value)
-//     && validateDni(inputDni.value)
-//     && validateBirthDate(inputBirthDate.value)
-//     && validatePhone(inputPhone.value)
-//     && validateAdd(inputAdd.value)
-//     && validateLoc(inputLoc.value)
-//     && validateZip(inputZip.value)
-//     && validateRePass(inputRePass.value)){
-//         fetch("https://basp-m2022-api-rest-server.herokuapp.com/login?email="+ inputEmail.value +"&password=" + inputPass.value)
-//             .then (function(response){
-//                 return response.json();
-//             })
-//             .then (function(jsonresponse){
-//                 if(jsonresponse.success){
-//                     window.alert(jsonresponse.msg);
-//                 }else{
-//                     window.alert(jsonresponse.msg);
-//                 }
-//             })
-//             .catch (function (error){
-//                 console.log("error: ", error);
-//                 console.log("Error: respuesta fallida");
-//             });
-//         }else{
-//         window.alert('Input Error: invalid inputs, please try again.');
-//     }
+var submit = document.getElementById('submit').addEventListener('click', buttonClick);
+function buttonClick(event){
+    event.preventDefault();
+    if(validatePass(inputPass.value)
+    && validateEmail(inputEmail.value)
+    && validateFirName(inputFirName.value)
+    && validateLastName(inputLastName.value)
+    && validateDni(inputDni.value)
+    && validateBirthDate(inputBirthDate.value)
+    && validatePhone(inputPhone.value)
+    && validateAdd(inputAdd.value)
+    && validateLoc(inputLoc.value)
+    && validateZip(inputZip.value)
+    && validateRePass(inputRePass.value)){
+        fetch("https://basp-m2022-api-rest-server.herokuapp.com/signup?name="+ inputFirName.value +
+        "&lastName="+ inputLastName.value +
+        "&dni="+ inputDni.value +
+        "&dob="+ bDate +
+        "&phone="+ inputPhone.value +
+        "&address="+ inputAdd.value +
+        "&city="+ inputLoc.value +
+        "&zip="+ inputZip.value +
+        "&email="+ inputEmail.value +
+        "&password="+ inputPass.value)
+            .then (function(response){
+                return response.json();
+            })
+            .then (function(jsonresponse){
+                if(jsonresponse.success){
+                    window.alert(jsonresponse.msg);
+                    console.log(jsonresponse);
+                }else{
+                    window.alert(jsonresponse.errors[i].msg);
+                    console.log(jsonresponse);
+                }
+            })
+            .catch (function (error){
+                console.log("error: ", error);
+                console.log("Error: respuesta fallida");
+            });
+    }else{
+        window.alert('Input Error: invalid inputs, please try again.');
+    }
+}
