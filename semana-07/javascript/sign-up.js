@@ -421,7 +421,15 @@ function buttonClick(event){
             .then (function(jsonresponse){
                 if(jsonresponse.success){
                     window.alert(jsonresponse.msg);
-                    console.log(jsonresponse);
+                    localStorage.setItem("name", inputFirName.value);
+                    localStorage.setItem("lastName", inputLastName.value);
+                    localStorage.setItem("dni", inputDni.value);
+                    localStorage.setItem("birthDate", bDate);
+                    localStorage.setItem("phone", inputPhone.value);
+                    localStorage.setItem("address", inputAdd.value);
+                    localStorage.setItem("zip", inputZip.value);
+                    localStorage.setItem("email", inputEmail.value);
+                    localStorage.setItem("password", inputPass.value);
                 }else{
                     window.alert(jsonresponse.errors[i].msg);
                     console.log(jsonresponse);
