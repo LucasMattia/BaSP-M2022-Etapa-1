@@ -375,7 +375,6 @@ inputBirthDate.onblur = function (){
         }else{
             bDate = (month + '/' + day + '/' + year);
             inputBirthDate.style.border = '2px solid lightgreen';
-            console.log(bDate);
         }
     }else{
         var bDateErrorMsg = document.getElementById('b-date-error');
@@ -391,6 +390,7 @@ inputBirthDate.onfocus = function (){
     inputRePass.style.color = '#373867';
 }
 
+// SUBMIT!!! validations, query-params and sets for local storage
 var submit = document.getElementById('submit').addEventListener('click', buttonClick);
 function buttonClick(event){
     event.preventDefault();
@@ -430,6 +430,8 @@ function buttonClick(event){
                     localStorage.setItem("zip", inputZip.value);
                     localStorage.setItem("email", inputEmail.value);
                     localStorage.setItem("password", inputPass.value);
+                    localStorage.setItem("location", inputLoc.value);
+
                 }else{
                     window.alert(jsonresponse.errors[i].msg);
                     console.log(jsonresponse);
@@ -443,3 +445,38 @@ function buttonClick(event){
         window.alert('Input Error: invalid inputs, please try again.');
     }
 }
+
+inputFirName.value = localStorage.getItem("name");
+inputFirName.focus();
+inputFirName.blur();
+inputLastName.value = localStorage.getItem("lastName");
+inputLastName.focus();
+inputLastName.blur();
+inputDni.value = localStorage.getItem("dni");
+inputDni.focus();
+inputDni.blur()
+bDate = localStorage.getItem("birthDate");
+inputBirthDate.value = bDate.substring(6,10) + "-" + bDate.substring(0,2) + "-" + bDate.substring(3,5);
+inputBirthDate.focus();
+inputBirthDate.blur();
+inputPhone.value = localStorage.getItem("phone");
+inputPhone.focus();
+inputPhone.blur();
+inputLoc.value = localStorage.getItem("location");
+inputLoc.focus();
+inputLoc.blur();
+inputAdd.value = localStorage.getItem("address");
+inputAdd.focus();
+inputAdd.blur();
+inputZip.value = localStorage.getItem("zip");
+inputZip.focus();
+inputZip.blur();
+inputEmail.value = localStorage.getItem("email");
+inputEmail.focus();
+inputEmail.blur();
+inputPass.value = localStorage.getItem("password");
+inputPass.focus();
+inputPass.blur();
+inputRePass.value = localStorage.getItem("password");
+inputRePass.focus();
+inputRePass.blur();
